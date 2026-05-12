@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in,left=1.5in,includefoot]{geometry}
+\usepackage{booktabs}
+\usepackage{float}
+% Header & Footer Stuff
+
+\usepackage{fancyhdr}
+\usepackage{wasysym}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\pagestyle{fancy}
+\lhead{MATH 220/199}
+\rhead{April 23, 2026}
+\fancyfoot{}
+\lfoot{David Gallardo}
+\fancyfoot[R]{}
+%027601193
+% The Main Document
+\begin{document}
+
+\begin{center}
+ \LARGE\bfseries MATH 220/199 Week 14 Day 2
+ \line(1,0){430}
+\end{center}
+\section*{Reminders}
+\begin{enumerate}
+    \item Office hours are held in Davenport 330 at 3pm on Thursdays.
+    \item Do the Merit Quiz on the Merit Canvas page.
+\end{enumerate}
+\section*{Does the Over or Under Hit?}
+In order to find areas between curves, we need to find which function is the top, and which is the bottom. The following exercises help you with some ideas to find which is which without graphing.
+\begin{enumerate}
+    \item Prove the following statements WITHOUT graphing: Let $f(x) = x, g(x) = \sin(x)$
+    \begin{enumerate}
+        \item For all $x \in [-\frac{\pi}{2}, 0), g(x) > f(x)$.
+        \item For all $x \in (0, \frac{\pi}{2}], f(x) > g(x)$.
+    \end{enumerate}
+    \vfill
+    \item Over the interval $(-\pi, \pi)$, determine the intervals where $\cot(x) > \cos(x)$.
+    \vfill
+    \item On which interval(s) is $\sqrt{|x|}>|x|$?
+    \vfill
+\end{enumerate}
+\newpage
+\section*{General Practice}
+\begin{enumerate}
+    \item (FTC) Compute $\frac{d}{dx} \int\limits_{3}^{\sin^2(x)} \frac{t}{1+t^2} dt$
+    \vfill
+    \item (Riemann Sums) For $f(x) = x^2-1$ over the interval $[0, 8]$, compute each of the following. For the first two, state whether they are and overestimate or underestimate.
+    \begin{enumerate}
+        \item $R_4$
+        \item $L_4$
+        \item $M_4$
+    \end{enumerate}
+    \vfill
+    \item (U-Sub) Compute $\int (1-\frac{1}{x}) \cos(x-\ln x) dx$
+    \vfill
+\end{enumerate}
+\end{document}
