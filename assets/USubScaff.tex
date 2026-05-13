@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in,left=1.5in,includefoot]{geometry}
+\usepackage{booktabs}
+\usepackage{float}
+% Header & Footer Stuff
+
+\usepackage{fancyhdr}
+\usepackage{wasysym}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\pagestyle{fancy}
+\lhead{MATH 220/199}
+\rhead{April 21, 2026}
+\fancyfoot{}
+\lfoot{David Gallardo}
+\fancyfoot[R]{}
+%027601193
+% The Main Document
+\begin{document}
+
+\begin{center}
+ \LARGE\bfseries MATH 220/199 Week 14 Day 1
+ \line(1,0){430}
+\end{center}
+\section*{Reminders}
+\begin{enumerate}
+    \item Office hours are held in Davenport 330 at 3pm on Thursdays.
+    \item Do the Merit Quiz on the Merit Canvas page.
+\end{enumerate}
+\section*{Scaffolding}
+The hardest part of u-sub, like many other calculus techniques, is keeping your work and ideas organized. For the following problems, separate your work into the four boxes given: In box 1, identify $u, du$. In box 2, rewrite the integral in terms of $u, du$. In box 2, perform the integration in terms of $u$. In box 4, find your final answer in terms of $x$.
+\begin{enumerate}
+    \item $\int \sin^2(x)\cos(x) dx$
+    \newline
+    \newline
+    \begin{tikzpicture}[scale = 0.8]
+        \draw (0, 0) -- (16, 0);
+        \draw (0, 0) -- (0, -16);
+        \draw (0, -16) -- (16, -16);
+        \draw (16, 0) -- (16, -16);
+        \draw (0, -8) -- (16, -8);
+        \draw (8, 0) -- (8, -16);
+    \end{tikzpicture}
+    \newpage
+    \item $\int \frac{x}{\sqrt{1-4x^2}} dx$
+    \newline
+    \newline
+    \begin{tikzpicture}[scale = 0.6]
+        \draw (0, 0) -- (20, 0);
+        \draw (0, 0) -- (0, -16);
+        \draw (0, -16) -- (20, -16);
+        \draw (20, 0) -- (20, -16);
+        \draw (0, -8) -- (20, -8);
+        \draw (10, 0) -- (10, -16);
+    \end{tikzpicture}
+    \vfill
+    \item $\int \cot(x) dx$
+    \newline
+    \newline
+    \begin{tikzpicture}[scale = 0.6]
+        \draw (0, 0) -- (20, 0);
+        \draw (0, 0) -- (0, -16);
+        \draw (0, -16) -- (20, -16);
+        \draw (20, 0) -- (20, -16);
+        \draw (0, -8) -- (20, -8);
+        \draw (10, 0) -- (10, -16);
+    \end{tikzpicture}
+    \vfill
+\end{enumerate}
+
+\end{document}
