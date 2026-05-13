@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in,left=1.5in,includefoot]{geometry}
+\usepackage{booktabs}
+\usepackage{float}
+% Header & Footer Stuff
+
+\usepackage{fancyhdr}
+\usepackage{wasysym}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\pagestyle{fancy}
+\lhead{MATH 220/199}
+\rhead{April 14, 2026}
+\fancyfoot{}
+\lfoot{David Gallardo}
+\fancyfoot[R]{}
+%027601193
+% The Main Document
+\begin{document}
+
+\begin{center}
+ \LARGE\bfseries MATH 220/199 Week 13 Day 1
+ \line(1,0){430}
+\end{center}
+\section*{Reminders}
+\begin{enumerate}
+    \item Office hours are held in Davenport 330 at 3pm on Thursdays.
+    \item Do the Merit Quiz on the Merit Canvas page.
+\end{enumerate}
+\section*{What if...Not Rectangle?}
+One issue with estimating areas with rectangles is that if a function is very concave/convex, we will get very large overestimates/underestimates. What if we used a new shape, like a trapezoid?
+\begin{enumerate}
+    \item Let $f(x) = x^2$. Fill in the chart below:
+    \newline
+    \newline
+    $\begin{array}{c|c|c|c|c|c}
+        x & 0 & 1 & 2 & 3 & 4 \\
+        \hline
+        f(x) & & & & & 
+    \end{array}$
+    \item Compute a Left Riemann sum for the area between $f(x)$ and the x-axis using 4 rectangles.
+    \vfill
+    \item Compute a Right Riemann sum for the area between $f(x)$ and the x-axis using 4 rectangles.
+    \vfill
+    \item Now, compute the 4-trapezoidal sum: Construct the trapezoids the same way as the rectangle, but the top side is made by connecting $f(a)$ to $f(a+\Delta)$.
+    \vfill
+    \item Using $\int\limits_{0}^4 x^2 \text{ d}x = \frac{64}{3}$, which estimate is the best?
+    \vfill
+\end{enumerate}
+\newpage
+\section*{Exploring Summation Notation}
+The following problems only look hard, they are not actually hard. My goal is to convince you that summation notation is not scary.
+\begin{enumerate}
+    \item Let $f^{(n)}(x)$ denote the $n^{th}$ derivative of $f(x)$. Say $f^0(x) := f(x)$. Let $f(x) = \sin(x)$. Compute:
+    \newline
+    $\sum\limits_{i = 0}^8 f^{(2i)}(\frac{\pi}{2}+i\pi)$
+    \vfill
+    \item Compute $\sum\limits_{n = 0}^{10} (-1)^n \cdot n$
+    \vfill
+    \item Let $\Delta_{(n, m)}$ be the right triangle with leg lengths $n, m$. Define $\mathbb{A}(\Delta_{(n, m)}) := \text{Area of } \Delta_{(n, m)}$. Compute:
+    \newline
+    $\sum\limits_{n = 1}^4 \mathbb{A}(\Delta_{(n, n+1)})$
+    \vfill
+\end{enumerate}
+
+\end{document}
