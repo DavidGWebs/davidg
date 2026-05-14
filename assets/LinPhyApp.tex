@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in,left=1.5in,includefoot]{geometry}
+\usepackage{booktabs}
+\usepackage{float}
+% Header & Footer Stuff
+
+\usepackage{fancyhdr}
+\usepackage{wasysym}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\pagestyle{fancy}
+\lhead{MATH 220/199}
+\rhead{March 10, 2026}
+\fancyfoot{}
+\lfoot{David Gallardo}
+\fancyfoot[R]{}
+%027601193
+% The Main Document
+\begin{document}
+
+\begin{center}
+ \LARGE\bfseries MATH 220/199 Week 8 Day 1
+ \line(1,0){430}
+\end{center}
+\section*{Reminders}
+\begin{enumerate}
+    \item Office hours are held in Davenport 330 at 3pm on Thursdays.
+    \item Do the Merit Quiz on the Merit Canvas page.
+\end{enumerate}
+\section*{We can do Infinitely Better than Linearization}
+Linearization works because we have a reference point and understand the nearby behavior of a graph near the point of interest - What if we also knew about the behavior of the behavior of the graph? Let's estimate $(2.01)^3$
+\begin{enumerate}
+    \item First, using linearization, find an estimate for $(2.01)^3$. Call your linearization equation $L_1(x)$.
+    \vfill
+    \item Define $L_2(x) = L_1(x)+\frac{f''(a)}{2!}(x-a)^2 = f(a)+f'(a)f'(x-a)+\frac{f''(a)}{2!}(x-a)^2$. Use $L_2(x)$ to estimate $(2.01)^3$. Is this estimate better?
+    \vfill
+    \item Define $L_3(x) = L_2(x)+\frac{f'''(a)}{3!}(x-a)^3$ and re-estimate $(2.01)^3$
+    \vfill
+    \item In general, we can construct these equations which give us better and better estimates using the recursive formula $L_n(x) = L_{n-1}(x)+\frac{f^{(n)}(a)}{n!}(x-a)^n$ - in Calc 2 you will call this a "Taylor Series". If you have time, compute $L_4(2.01)$ and see how good this estimate is.
+    \vfill
+\end{enumerate}
+\newpage
+\section*{Plausible Exam Word Problem}
+Suppose that a particle oscillates and has position function given by $p(t) = \sin(t)-\cos(t)$
+\begin{enumerate}
+    \item Over the interval $[0, 3\pi]$, determine all the times $t$ when the particle is not moving.
+    \vfill
+    \item Over the interval $[0, \pi]$, determine the intervals where the particle is speeding up, and where it is slowing down.
+    \vfill
+    \item Over the interval $[0, \pi]$, determine when the particle has the greatest speed.
+    \vfill
+    \item The change in acceleration over time is called 
+    "jerk". If $v(t)$ is the velocity equation, find $j(t)$, the jerk equation in terms of $v(t)$.
+    \vfill
+\end{enumerate}
+
+\end{document}
